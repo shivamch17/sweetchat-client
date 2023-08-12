@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.outerbody{
+  min-height: 20vw;
+  padding: 1vw;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mostouter{
+  min-height: 200px;
+  padding: 10px;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vh;
+
+}
+
+.nn{
+  /* position: relative; */
+  height: 90vh; 
+  overflow-y: auto;
+}
