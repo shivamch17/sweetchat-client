@@ -27,7 +27,7 @@ export const loginUser = (props) => async (dispatch) => {
         }
 
         const { data } = await axios.post(
-            'https://sweetchat-1-m9201062.deta.app/api/v1/verifyUser',
+            'https://server-1-y6880112.deta.app/api/v1/verifyUser',
             props,
             config
         );
@@ -59,7 +59,7 @@ export const setRoom = (props) => async (dispatch) => {
         }
 
         const { data } = await axios.post(
-            'https://sweetchat-1-m9201062.deta.app/api/v1/verifyRoom',
+            'https://server-1-y6880112.deta.app/api/v1/verifyRoom',
             props,
             config
         );
@@ -90,7 +90,7 @@ export const getMessages = (props) => async (dispatch) => {
         }
         
         const { data } = await axios.post(
-            'https://sweetchat-1-m9201062.deta.app/api/v1/getChats',
+            'https://server-1-y6880112.deta.app/api/v1/getChats',
             props,
             config
             );
@@ -112,7 +112,7 @@ export const getMessages = (props) => async (dispatch) => {
 export const postMessage = (roomid, msg, username) => async (dispatch) => {
     try
     {
-        const response = await axios.post('https://sweetchat-1-m9201062.deta.app/api/v1/postChats', {roomid, msg,username});
+        const response = await axios.post('https://server-1-y6880112.deta.app/api/v1/postChats', {roomid, msg,username});
         const newMessage = response.data.chat;
         // console.log(newMessage.createdAt);
         let createdAt=newMessage.createdAt;
@@ -127,7 +127,7 @@ export const postMessage = (roomid, msg, username) => async (dispatch) => {
 export const getNewMessages = (roomid,createdAt) => async (dispatch) => {
     try
     {
-        const response = await axios.post('https://sweetchat-1-m9201062.deta.app/api/v1/getNewChats', {createdAt,roomid });
+        const response = await axios.post('https://server-1-y6880112.deta.app/api/v1/getNewChats', {createdAt,roomid });
         const newMessage = response.data.chat;
         // console.log(newMessage);
         if(newMessage.length>0)

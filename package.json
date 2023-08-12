@@ -1,6 +1,6 @@
 {
   "name": "sweetchat",
-  "proxy": "https://sweetchat-1-m9201062.deta.app",
+  "proxy": "https://server-1-y6880112.deta.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
